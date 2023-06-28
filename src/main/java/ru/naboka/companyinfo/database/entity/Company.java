@@ -5,6 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -34,4 +37,11 @@ public class Company implements BaseEntity<Integer> {
     @Column(name = "legal_address", nullable = false)
     private String legalAddress;
 
+    @Builder.Default
+    @OneToMany(mappedBy = "company")
+    private List<SEO> seo = new ArrayList<>();
+
+    @Builder.Default
+    @OneToMany(mappedBy = "company")
+    private List<Branch> branch = new ArrayList<>();
 }
