@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS company_seo
     seo_birth_date DATE NOT NULL,
     company_id INT REFERENCES company (id)
     );
---rollback DROP TABLE general_manager;
+--rollback DROP TABLE company_seo;
 
 --changeset enaboka:3
 CREATE TABLE IF NOT EXISTS company_branch
@@ -34,4 +34,4 @@ CREATE TABLE IF NOT EXISTS company_branch
     post_address VARCHAR(256) NOT NULL,
     company_id INT REFERENCES company (id)
     );
---rollback DROP TABLE general_manager;
+--rollback DROP TABLE company_branch;
