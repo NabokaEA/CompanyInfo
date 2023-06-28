@@ -5,9 +5,9 @@ CREATE TABLE IF NOT EXISTS company
 (
     id SERIAL PRIMARY KEY,
     full_name VARCHAR(64) NOT NULL UNIQUE,
-    short_name VARCHAR(32) NOT NULL UNIQUE,
-    inn INT NOT NULL UNIQUE,
-    ogrn INT NOT NULL UNIQUE,
+    short_name VARCHAR(32) NOT NULL,
+    inn VARCHAR(10) NOT NULL UNIQUE,
+    ogrn VARCHAR(13) NOT NULL UNIQUE,
     post_address VARCHAR(256) NOT NULL,
     legal_address VARCHAR(256) NOT NULL
 );
