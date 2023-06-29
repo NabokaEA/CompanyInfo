@@ -1,12 +1,17 @@
 package ru.naboka.companyinfo.repository;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 import ru.naboka.companyinfo.database.entity.Company;
 
-import java.util.List;
-import java.util.Optional;
+@Repository
+public interface CompanyRepository extends JpaRepository <Company, Integer>  {
+    @Query(value = "select c from company c where upper(c.fullName) like %?1%")
+    Page<Company> findByName(String filter, Pageable pageable);
 
-public interface CompanyRepository extends org.springframework.data.repository.Repository<Company, Integer>  {
-    Optional<Company> findById (Integer id);
-    List<Company> findAllByFullNameContains = null;
+    Page<Company> findAll(Pageable pageable);
 
 }

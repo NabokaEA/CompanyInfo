@@ -1,9 +1,6 @@
 package ru.naboka.companyinfo.database.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,7 +8,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
+@EqualsAndHashCode
+@Entity(name = "branch")
 @Table(name = "company_branch")
 public class Branch implements BaseEntity<Integer>{
     @Id
@@ -27,7 +25,7 @@ public class Branch implements BaseEntity<Integer>{
     @Column(name = "post_address",nullable = false)
     private String postAddress;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "company_id")
     private Company company;
 

@@ -1,9 +1,7 @@
 package ru.naboka.companyinfo.database.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +10,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
+@EqualsAndHashCode
+@Entity(name = "company")
 @Table(name = "company")
 public class Company implements BaseEntity<Integer> {
     @Id
@@ -43,5 +42,5 @@ public class Company implements BaseEntity<Integer> {
 
     @Builder.Default
     @OneToMany(mappedBy = "company")
-    private List<Branch> branch = new ArrayList<>();
+    private List<Branch> branches = new ArrayList<>();
 }

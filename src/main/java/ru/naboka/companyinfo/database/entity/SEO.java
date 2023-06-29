@@ -1,9 +1,6 @@
 package ru.naboka.companyinfo.database.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -12,7 +9,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
+@EqualsAndHashCode
+@Entity(name = "seo")
 @Table(name = "company_seo")
 public class SEO implements BaseEntity<Integer>{
     @Id
@@ -33,6 +31,6 @@ public class SEO implements BaseEntity<Integer>{
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "company_id")
-    private Company company;
+    private SEO company;
 
 }
