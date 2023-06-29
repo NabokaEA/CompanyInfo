@@ -15,3 +15,7 @@ spring:
         show_sql: true
         hbm2ddl.auto: validate
 
+company-info-config:
+  get-page-config:
+    max-size: 40
+    default-size: 20
