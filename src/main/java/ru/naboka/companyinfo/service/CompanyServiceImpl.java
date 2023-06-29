@@ -5,6 +5,9 @@ import org.springframework.data.domain.Pageable;
 import ru.naboka.companyinfo.database.entity.Company;
 import ru.naboka.companyinfo.repository.CompanyRepository;
 import ru.naboka.companyinfo.util.PageSizeValueProvider;
+
+import java.util.Optional;
+
 import static ru.naboka.companyinfo.util.IsNullCheckerProvider.isNull;
 
 
@@ -25,5 +28,10 @@ public class CompanyServiceImpl implements CompanyService {
         return companyRepository.findByFullName(filterForName.toUpperCase(), Pageable
                 .ofSize(pageSize)
                 .withPage(pageNumber));
+    }
+
+    @Override
+    public Optional<Company> getById(Integer id) {
+        return companyRepository.findById(id);
     }
 }
