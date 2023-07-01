@@ -1,7 +1,9 @@
 package ru.naboka.companyinfo.service;
 
+import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 import ru.naboka.companyinfo.database.entity.Company;
 import ru.naboka.companyinfo.repository.CompanyRepository;
 import ru.naboka.companyinfo.util.PageSizeValueProvider;
@@ -10,7 +12,8 @@ import java.util.Optional;
 
 import static ru.naboka.companyinfo.util.IsNullCheckerProvider.isNull;
 
-
+@Service
+@AllArgsConstructor
 public class CompanyServiceImpl implements CompanyService {
 
     private CompanyRepository companyRepository;

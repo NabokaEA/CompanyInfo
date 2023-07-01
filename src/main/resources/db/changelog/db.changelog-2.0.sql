@@ -3,12 +3,12 @@ insert into company (full_name, short_name, inn, ogrn, post_address, legal_addre
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Thoughtblab', 'Devcast', '1072216769', '2060320399984', '31142 Division Terrace', '1076 Montana Road');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Kare', 'Pixonyx', '637765081', '2141807968907', '2 Novick Circle', '32 Namekagon Trail');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Innojame', 'Mycat', '747555836', '2689130386297', '5990 Petterle Road', '82356 Spenser Hill');
-insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Quamba', 'Skiba', '394228606', '1882497421583', '1 Drewry Drive', '469 Ohio Street');
+insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Quambauu', 'Skiba', '394228606', '1882497421583', '1 Drewry Drive', '469 Ohio Street');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Roomm', 'Bubbletube', '464053704', '1316762540014', '20994 Monument Lane', '91 Village Green Park');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Babblestorm', 'Twitterbridge', '408514894', '3319868380171', '4 Park Meadow Avenue', '5263 Sunnyside Hill');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Skilith', 'Thoughtbridge', '951315965', '2077950926776', '08 Arapahoe Junction', '056 Saint Paul Street');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Skaboo', 'Babbleset', '427020257', '1968465317109', '878 Onsgard Trail', '24443 Spaight Road');
-insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Quambas', 'Photolist', '1050247098', '2556781415186', '18 Algoma Crossing', '5 Eagan Crossing');
+insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Quambas', 'Photolistt', '1050247098', '2556781415186', '18 Algoma Crossing', '5 Eagan Crossing');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Wordtune', 'Ooba', '669919753', '1791261609306', '6 Oak Valley Lane', '4857 Mockingbird Trail');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Innojam', 'Lazz', '253504377', '992244168011', '8 Welch Avenue', '76 Magdeline Circle');
 insert into company (full_name, short_name, inn, ogrn, post_address, legal_address) values ('Zoombox', 'Buzzster', '1071881927', '67536420530', '73453 Loomis Terrace', '50597 Colorado Junction');
